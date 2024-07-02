@@ -5,11 +5,12 @@ A_dB = 90;
 Beta = A_dB/10; %if A_dB < 40 dB have to reduce Beta
 N=(fs/(f2-f1))*(A_dB/22); 
 M = floor((fs/(f2-f1))*A_dB/22); %For windowed design, A_dB/22
-if rem(M,2)==0 %we want N to be an odd integer 
+
+if rem(M,2)==0 %we want M to be an odd integer 
     M=M+1;  
 end
 
-MM=(M-1)/2; %Compute end points of array interval, NN
+MM=(M-1)/2; %Compute end points of array interval, MM
 phi=2*pi*(-MM:MM)*(f1+f2)/(2*fs); %compute phase argument of sinc filter
  
 h=sin(phi)./phi; %unscaled sinc filter h
