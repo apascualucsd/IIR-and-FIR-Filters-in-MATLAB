@@ -31,4 +31,3 @@ passband 0 to 20 kHz.	Passband Ripple	0.1 dB
 Stopband 24 to 44.1 kHz.	Stopband attenuation -90 dB
 What order ALL-PASS filter was required to meet the filter specifications? 
 Design filter and use the sum of the two-path impulse response to form the impulse response. Present the impulse response, Log magnitude frequency response, and Zoom to passband ripple frequency response.
-
